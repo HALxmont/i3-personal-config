@@ -9,6 +9,16 @@
 # layout, use the i3-config-wizard
 #
 
+
+
+#############
+#SOUND MODES
+#############
+bindsym Mod1+y exec pactl set-sink-mute @DEFAULT_SINK@ toggle # Mute
+bindsym Mod1+u exec pactl set-sink-volume @DEFAULT_SINK@ -5%  # Up
+bindsym Mod1+Shift+u exec pactl set-sink-volume @DEFAULT_SINK@ +5%  # Down
+
+
 #############
 #screen modes
 #############
